@@ -81,7 +81,7 @@ export default function RegisterPage() {
         try {
             await authClient.signIn.social({
                 provider: "google",
-                callbackURL: "https://fable-client-blond.vercel.app/auth/google-callback",
+                callbackURL: `${window.location.origin}/auth/google-callback`,
             });
         } catch {
             toast.error("Google registration failed");
