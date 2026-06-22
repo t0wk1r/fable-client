@@ -45,7 +45,6 @@ export default function Footer() {
             <Link href="/login" className="hover:text-white">Login</Link>
           </div>
         </div>
-
         <div>
           <h3 className="mb-4 font-semibold text-white">Newsletter</h3>
           <p className="mb-4 text-sm text-slate-400">
@@ -64,7 +63,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       <div className="border-t border-slate-800 px-4 py-5 text-center text-sm text-slate-500">
         © 2026 Fable. All rights reserved.
       </div>
