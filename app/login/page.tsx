@@ -85,7 +85,7 @@ export default function LoginPage() {
   try {
     await authClient.signIn.social({
       provider: "google",
-      callbackURL: `${window.location.origin}/auth/google-callback`,
+      callbackURL: "https://fable-client-blond.vercel.app/auth/google-callback",
     });
   } catch {
     toast.error("Google login failed");
