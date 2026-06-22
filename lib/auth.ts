@@ -1,18 +1,7 @@
-import { betterAuth } from "better-auth";
+"use client";
 
-export const auth = betterAuth({
-  secret: process.env.BETTER_AUTH_SECRET,
-  baseURL: process.env.BETTER_AUTH_URL,
+import { createAuthClient } from "better-auth/react";
 
-  trustedOrigins: [
-    "http://localhost:3000",
-    process.env.CLIENT_URL,
-  ].filter(Boolean) as string[],
-
-  socialProviders: {
-    google: {
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-    },
-  },
+export const authClient = createAuthClient({
+  baseURL: process.env.NEXT_PUBLIC_SERVER_URL,
 });
