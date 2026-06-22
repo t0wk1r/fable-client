@@ -13,7 +13,7 @@ export default function GoogleCallbackPage() {
     const processGoogleLogin = async () => {
       try {
         const sessionRes = await fetch(
-          "http://localhost:3000/api/auth/get-session",
+          `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/get-session`,
           {
             method: "GET",
             credentials: "include",
