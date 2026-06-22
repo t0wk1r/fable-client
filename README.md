@@ -262,6 +262,4 @@ This project was developed for educational and portfolio purposes. All rights re
 
 ---
 
-### Project Name
 
-**Fable – Discover & Read Original Ebooks** 📚✨
