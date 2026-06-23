@@ -49,7 +49,8 @@ export default function BrowseEbooksPage() {
       const res = await api.get(`/ebooks?${params.toString()}`);
 
       setEbooks(res.data.data || []);
-      setTotalPages(res.data.totalPages || 1);
+      //setTotalPages(res.data.totalPages || 1);
+      setTotalPages(res.data.pagination?.totalPages || 1);
     } catch {
       setEbooks([]);
       setTotalPages(1);
